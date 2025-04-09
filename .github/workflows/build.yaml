@@ -151,9 +151,9 @@ jobs:
         with:
           context: .
           file: Dockerfile
-          tags: ghcr.io/${{ github.repository_owner }}/haos-builder
-          cache-from: ghcr.io/${{ github.repository_owner }}/haos-builder:cache-${{ steps.version.outputs.version_main }}
-          cache-to: ghcr.io/${{ github.repository_owner }}/haos-builder:cache-${{ steps.version.outputs.version_main }}
+          tags: ghcr.io/${{ github.repository_owner }}/operating-system-ent-wing/haos-builder
+          cache-from: ghcr.io/${{ github.repository_owner }}/operating-system-ent-wing/haos-builder:cache-${{ steps.version.outputs.version_main }}
+          cache-to: ghcr.io/${{ github.repository_owner }}/operating-system-ent-wing/haos-builder:cache-${{ steps.version.outputs.version_main }}
           push: true
 
       - name: Generate self-signed certificate
